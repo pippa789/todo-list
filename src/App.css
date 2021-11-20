@@ -1,38 +1,46 @@
 .App {
-  text-align: center;
+  display: column;
+  width: 400px;
+  height: 500px;
+  background-image: url(borderimg.png);
+  background-repeat: no-repeat;
+  /* background-color: #d80d0d; */
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-left: 300px;
+  margin-left: 300px;
+  padding: 150px;
+  box-shadow: rgb(167, 160, 160) 10px 10px 0.5px 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.heading {
+  font-family: Road Rage, cursive;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-size: 70px;
+  color: #f70a6d;
 }
-
-.App-link {
-  color: #61dafb;
+.list {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /* background-color: aqua; */
+  font-family: Road Rage, cursive;
+  font-size: 50px;
+  padding: 10px;
+  color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* background-color: brown; */
+  font-family: Road Rage, cursive;
+  font-size: 25px;
+  justify-content: space-around;
+  align-items: space-around;
+  text-align: center;
+  padding: 5px;
+  margin-left: 80px;
+  border: solid 2px #f70a6d;
 }

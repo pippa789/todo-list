@@ -1,18 +1,18 @@
-
 import './App.css';
 import React, {useState} from "react";
 
 const App = () => {
   //STATE
     const [list, setList] = useState(["laundry"])
-    const [inputText, setInputText] = useState("input")
+    const [inputText, setInputText] = useState("")
     
     const addHandler = () => {
       let storedList = [...list]
       storedList.push(inputText)
       setList(storedList)
+      setInputText('') 
+      }
       
-   }
   
    const removeHandler = (index) => {
      let storedList = [...list]
@@ -32,12 +32,14 @@ const App = () => {
             </h2>
   
         })}
-        <input className="buttons" type="text" onChange={(event) => setInputText(event.target.value)}/>
+        
+        <input className="input" value = {inputText} type="text" onChange={(event) => setInputText(event.target.value)}/>
   
         <button className="buttons" onClick={addHandler}>add to my todo list</button>
-          {/* <input className="buttons" type="text" onInput={resetInputfield}/> */}
     </div>
   )
   }
   export default App
   
+
+    

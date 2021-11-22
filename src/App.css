@@ -1,16 +1,16 @@
 .App {
-  display: column;
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 500px;
   background-image: url(borderimg.png);
   background-repeat: no-repeat;
   /* background-color: #d80d0d; */
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 150px;
   padding-left: 300px;
   margin-left: 300px;
-  padding: 150px;
   box-shadow: rgb(167, 160, 160) 10px 10px 0.5px 5px;
 }
 .heading {
@@ -22,25 +22,36 @@
   color: #f70a6d;
 }
 .list {
-  justify-content: space-around;
-  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: center;
   /* background-color: aqua; */
   font-family: Road Rage, cursive;
   font-size: 50px;
   padding: 10px;
   color: red;
+  margin-left: -20px;
+  margin-top: 10px;
 }
 .buttons {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
   font-family: Road Rage, cursive;
-  font-size: 25px;
-  justify-content: space-around;
+  font-size: 20px;
+  justify-content: flex-end;
   align-items: space-around;
   text-align: center;
   padding: 5px;
-  margin-left: 80px;
+  margin-left: 20px;
   border: solid 2px #f70a6d;
+  margin-top: 10px;
+}
+.input {
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 20px;
+  border: solid 2px #f70a6d;
+  margin-top: 10px;
 }
